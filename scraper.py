@@ -3,8 +3,8 @@ from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET 
 from ElementTree_pretty import prettify
 
-####scrapes page fresh###
-url = "https://www.tcpalm.com/staff/4388239002/laurence-reisman/"
+####scrapes page fresh - url removed to stop page from being scrape spammed###
+url = ""
 response = requests.get(url)
 bs_content = BeautifulSoup(response.text, "html.parser")
 links, titles, descriptions = [],[],[]
